@@ -5,9 +5,9 @@ import Icon from "@ant-design/icons/es";
 import ajax, {baseUrl} from "../../api/ajax";
 import memoryUtils from "../../utils/memoryUtils";
 import storageUtil from "../../utils/storageUtil";
-import Redirect from "react-router-dom/es/Redirect";
+import { Redirect } from "react-router-dom";
 
-class Index extends Component {
+class Login extends Component {
     LoginForm = () => {
         const onFinish = async (values) => {
             const response = await ajax(baseUrl + '/login', values);
@@ -89,4 +89,4 @@ class Index extends Component {
 }
 
 
-export default Index;
+export default Login;

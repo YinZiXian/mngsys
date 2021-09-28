@@ -1,6 +1,7 @@
 import React, {Component} from 'react';
+import './index.less'
 
-class Content extends Component {
+class Header extends Component {
     render() {
         return (
             <div>
@@ -10,4 +11,4 @@ class Content extends Component {
     }
 }
 
-export default Content;
+export default Header;

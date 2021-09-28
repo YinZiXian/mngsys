@@ -1,13 +1,13 @@
 import React, {Component} from 'react';
 
-class Header extends Component {
+class Line extends Component {
     render() {
         return (
             <div>
-                
+                Line
             </div>
         );
     }
 }
 
-export default Header;
+export default Line;
