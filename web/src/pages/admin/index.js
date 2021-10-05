@@ -12,8 +12,9 @@ import CountReport from "../inventory/countreport";
 import RoleMng from "../staff/rolemng";
 import MemberMng from "../staff/membermng";
 import About from "../about";
+import Header from "../../components/header";
 
-const {Header, Footer, Sider, Content} = Layout;
+const {Footer, Sider, Content} = Layout;
 
 class Admin extends Component {
     render() {
@@ -27,7 +28,7 @@ class Admin extends Component {
                     <LeftNav style={{backgroundColor: "#cccccc"}}/>
                 </Sider>
                 <Layout>
-                    <Header style={{backgroundColor: "white", color: "#1890ff"}}>Header</Header>
+                    <Header/>
                     <Content style={{backgroundColor: "fff", color: "#1890ff"}}>
                         <Switch>
                             <Route path='/home' component={Home}></Route>

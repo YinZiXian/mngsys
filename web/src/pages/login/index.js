@@ -11,7 +11,6 @@ class Login extends Component {
     LoginForm = () => {
         const onFinish = async (values) => {
             const response = await ajax(baseUrl + '/login', values);
-            console.log(this)
             if (response.status == 200) {
                 const user = response.data;
                 memoryUtils.user = user;
