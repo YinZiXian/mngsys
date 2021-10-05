@@ -51,9 +51,8 @@ class LeftNav extends Component {
                     <h1>库存管理系统</h1>
                 </Link>
                 <Menu
-                    onClick={this.handleClick}
                     selectedKeys={[path]}
-                    openKeys={[this.openKey]}
+                    defaultOpenKeys={[this.openKey]}
                     mode="inline"
                 >
                     {this.menuNodes}
